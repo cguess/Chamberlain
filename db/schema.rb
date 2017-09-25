@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170830033419) do
     t.string "description"
     t.string "api_key"
     t.integer "facts_count", default: 0
-    t.datetime "last_seen", default: "2017-08-30 04:31:43"
+    t.datetime "last_seen", default: "2017-09-22 19:09:08"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["uuid"], name: "index_clients_on_uuid"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170830033419) do
     t.string "source_url"
     t.string "client_uuid"
     t.integer "site_id"
-    t.datetime "last_seen", default: "2017-08-30 04:31:43"
+    t.datetime "last_seen", default: "2017-09-22 19:09:08"
     t.integer "times_seen", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20170830033419) do
 
   create_table "sites", force: :cascade do |t|
     t.string "base_url"
-    t.datetime "last_visted", default: "2017-08-30 04:31:43"
+    t.datetime "last_visted", default: "2017-09-22 19:09:08"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

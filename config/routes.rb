@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   # API, JSON-only
-  constraints lambda { |req| req.format == :json && req.subdomain == 'api' } do
+  # constraints lambda { |req| req.format == :json && req.subdomain == 'api' } do
+  constraints lambda { |req| req.format == :json } do
 	  resources :facts
 	end
 
